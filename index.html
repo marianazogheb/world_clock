@@ -6,9 +6,12 @@
     <!--CSS Link-->
     <link rel="stylesheet" href="src/style.css" />
     <!--Google Fonts Link-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!--Moment Link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
@@ -18,29 +21,48 @@
     <div class="container">
       <h1>World Clock</h1>
 
-      <select>
+      <select id="selectCity">
         <option value="">Select a city here</option>
-        <option value="current">My current location</option>
-        <option value="Europe/Lisbon">Lisbon</optiion>
-        <option value="America/New_York">New York</option>
-        <option value="Pacific/Sydney">Sydney</option>
+        <option value="current">Current location📍</option>
+        <option value="Europe/Lausanne">Lausanne🇨🇭</option>
+        <option value="America/New_York">New York🇺🇸</option>
+        <option value="Pacific/Sydney">Sydney🇦🇺</option>
       </select>
 
       <div id="cities">
-        <div class="city" id="lausanne">
-            <div>
-                <h2>Lausanne 🇨🇭</h2>
-        <div class="date"></div>
-        </div>
-        <div class="time"></div>
-      </div>
-      <div class="city" id="venice">
-        <div>
-        <h2>Venice 🇮🇹</h2>
-        <div class="date"></div>
-        </div>
-        <div class="time"></div>
-      </div>
+        <span id="lausanne">
+          <div class="row">
+            <div class="city">Lausanne 🇨🇭</div>
+          </div>
+          <div class="row">
+            <div class="date col"></div>
+            <div class="time col"></div>
+          </div>
+        </span>
+
+        <hr class="dashed-line" />
+
+        <span id="new-york">
+          <div class="row">
+            <div class="city">New York 🇺🇸</div>
+          </div>
+          <div class="row">
+            <div class="date col"></div>
+            <div class="time col"></div>
+          </div>
+        </span>
+
+        <hr class="dashed-line" />
+
+        <span id="sydney">
+          <div class="row">
+            <div class="city">Sydney 🇦🇺</div>
+          </div>
+          <div class="row">
+            <div class="date col"></div>
+            <div class="time col"></div>
+          </div>
+        </span>
       </div>
     </div>
     <footer>

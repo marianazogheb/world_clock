@@ -58,7 +58,10 @@ select {
   vertical-align: middle;
   line-height: 45px;
 }
-
+.goBackLink {
+  margin-top: 200px;
+  margin-left: 20px;
+}
 footer {
   text-align: center;
   font-size: 18px;
