@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Moment Link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
@@ -17,21 +20,27 @@
 
       <select>
         <option value="">Select a city here</option>
-        <option value="">Lisbon</optiion>
-        <option value="">New York</option>
-        <option value="">Sydney</option>
+        <option value="current">My current location</option>
+        <option value="Europe/Lisbon">Lisbon</optiion>
+        <option value="America/New_York">New York</option>
+        <option value="Pacific/Sydney">Sydney</option>
       </select>
 
-      <div class="city">
+      <div id="cities">
+      <div class="city" id="lausanne"></div>
         <h2>Lausanne 🇨🇭</h2>
-        <div class="date">June 26th 2023</div>
-        <div class="time">12:34:32 AM</div>
+        <div class="date"></div>
+        </div>
+        <div class="time"></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="venice">
+        <div>
         <h2>Venice 🇮🇹</h2>
-        <div class="date">June 26th 2023</div>
-        <div class="time">12:34:32 AM</div>
+        <div class="date"></div>
+        </div>
+        <div class="time"></div>
+      </div>
       </div>
     </div>
     <footer>
