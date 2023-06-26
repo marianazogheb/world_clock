@@ -9,12 +9,6 @@ h1 {
   color: #475053;
 }
 
-h2 {
-  margin: 0 0 5px;
-  font-size: 25px;
-  color: #2e94b9;
-}
-
 select {
   display: block;
   width: 100%;
@@ -36,8 +30,10 @@ select {
   display: flex;
   margin: 10px 0;
   justify-content: space-between;
-  padding: 30px 0;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  font-size: 25px;
+  color: #2e94b9;
+  font-weight: bold;
 }
 
 .city:last-child {
@@ -50,6 +46,8 @@ select {
 
 .time {
   font-size: 25px;
+  margin-left: 450px;
+  margin-top: -40px;
   font-weight: bold;
 }
 
